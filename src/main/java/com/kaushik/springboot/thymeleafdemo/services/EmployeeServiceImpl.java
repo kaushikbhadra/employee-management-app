@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.kaushik.springboot.thymeleafdemo.dao.EmployeeRepository;
-import com.kaushik.springboot.thymeleafdemo.model.Employee;
+import com.kaushik.springboot.thymeleafdemo.entity.Employee;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeServices {

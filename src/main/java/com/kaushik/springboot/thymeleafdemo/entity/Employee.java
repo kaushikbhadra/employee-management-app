@@ -1,4 +1,4 @@
-package com.kaushik.springboot.thymeleafdemo.model;
+package com.kaushik.springboot.thymeleafdemo.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,6 +13,7 @@ public class Employee {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private int id;
 	@Column(name = "first_name")
 	private String firstName;
@@ -25,6 +26,13 @@ public class Employee {
 
 	}
 
+	public Employee(int id,String firstName, String lastName, String email) {
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+	}
+	
 	public Employee(String firstName, String lastName, String email) {
 		this.firstName = firstName;
 		this.lastName = lastName;

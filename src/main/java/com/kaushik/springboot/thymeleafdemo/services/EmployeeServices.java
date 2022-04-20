@@ -2,7 +2,7 @@ package com.kaushik.springboot.thymeleafdemo.services;
 
 import java.util.List;
 
-import com.kaushik.springboot.thymeleafdemo.model.Employee;
+import com.kaushik.springboot.thymeleafdemo.entity.Employee;
 
 public interface EmployeeServices {
 
